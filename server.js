@@ -83,6 +83,20 @@ server.post("/", function(req, res){
 
         return res.redirect("/ideias")
     })
+
+    const valueDel = req.body.titleDel
+
+    db.run(`DELETE FROM ideias WHERE title = ?`, [valueDel], function(err){
+        if(err) return console.log(err)
+
+        console.log("Deletei", this)
+    })
+
+        db.run(`DELETE FROM ideias WHERE title is null`, function(err){
+            if(err) return console.log(err)
+    
+            console.log("Deletei", this)
+        })
 })
 
 //Liguei meu servidor na porta 3000

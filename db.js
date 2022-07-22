@@ -13,18 +13,21 @@ db.serialize(function(){
         link TEXT
     );`)
 
-    //Consultar dados na tabela
-    /*db.all(`SELECT * FROM ideias`, function(err, rows){
+    //Consultar E Deletar dados da tabela
+    /*db.all(`SELECT id FROM ideias WHERE title='abc'`, function(err, rows){
         if(err) return console.log(err)
 
-        console.log(rows)
-    })*/
+        var arr = rows.map(function(obj) {
+            return Object.keys(obj).map(function(key) {
+                return obj[key];
+            });
+        });
 
-    //Deletar um dado na tabela
-    /*db.run(`DELETE FROM ideias WHERE id = ?`, [3], function(err){
-        if(err) return console.log(err)
-
-        console.log("Deletei", this)
+        db.run(`DELETE FROM ideias WHERE id = ?`, [arr[0]], function(err){
+            if(err) return console.log(err)
+    
+            console.log("Deletei", this)
+        })
     })*/
 
 })

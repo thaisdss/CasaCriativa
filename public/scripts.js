@@ -14,6 +14,13 @@ function onOff(){
     .toggle("addScroll")*/
 }
 
+function onOffDel(){
+    document
+    .getElementById("modalDel")
+    .classList
+    .toggle("hide")
+}
+
 function checkFields(event){
     const valuesCheck = [
         "title",
