@@ -96,7 +96,7 @@ button:hover{
 }
 
 footer{
-    font-size: 14px;
+    font-size: 0.25em;
     font-weight: normal;
     line-height: 18px;
     letter-spacing: 0.2px;
@@ -128,7 +128,6 @@ footer a:hover{
 }
 
 .ideia img{
-    grid-column: 1;
     width: 60px;
     height: 60px;
     margin-right: 32px;
@@ -158,6 +157,7 @@ footer a:hover{
     height: 100vw;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     transition: 400ms;
 }
 
@@ -317,6 +317,6 @@ form button:hover{
 
 #page-ideias #ideias,
 #sectionTitle, 
-footer{
+#page-ideias footer{
     margin-top: 64px;
 }

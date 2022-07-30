@@ -1,0 +1,72 @@
+/*Página Index.HTML*/
+
+#container{
+    display: block;
+}
+
+#intro{
+    margin: 0 auto;
+}
+
+header a img{
+    display: block;
+    margin: 0 auto;
+}
+#modal{
+    height: 900px;
+}
+
+@media(min-width: 500px) and (max-width: 960px){
+    #intro{
+        width: 320px;
+    }
+}
+
+@media(max-width: 660px){
+    .content form div{
+        grid-column: span 2;
+    }
+
+    .content form{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 460px){
+    .ideia{
+        display: block;
+        padding: 10px 32px 32px 32px;
+    }
+
+    .ideia img{
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+@media(max-width: 360px){
+    #modal{
+        height: 1000px;
+    }
+
+    #modal form{
+        grid-template-columns: 150px 100px;
+        gap: 0px;
+    }
+
+    .content form div,  .content form a,  .content form button{ 
+        margin: 0px auto 20px auto;
+    }
+
+    form button{
+        margin-top: 0px;
+        grid-column: 1;
+    }
+
+    form button, form a{
+        grid-column: span 2;
+    }
+}
+
+
+/*Página Ideias.HTML*/
