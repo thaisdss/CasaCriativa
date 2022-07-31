@@ -12,17 +12,53 @@ header a img{
     display: block;
     margin: 0 auto;
 }
+
+/*Modal*/
 #modal{
     height: 900px;
 }
 
+/*Página Ideias.HTML*/
+
+#page-ideias header{
+    display: block;
+}
+
+#page-ideias header a img{
+    margin-left: 0px;
+}
+
+#page-ideias nav{
+    margin-top: 40px;
+    justify-content: center;
+}
+
+
+#page-ideias #ideias{
+    display: block;
+}
+
+#page-ideias #ideias .ideia{
+    display: block;
+    padding: 10px 32px 32px 32px;
+    margin-bottom: 32px;
+}
+
+#page-ideias #ideias .ideia img{
+    display: block;
+    margin: 15px auto;
+}
+
+
 @media(min-width: 500px) and (max-width: 960px){
+    /*Página Index.HTML*/
     #intro{
         width: 320px;
     }
 }
 
 @media(max-width: 660px){
+    /*Modal*/
     .content form div{
         grid-column: span 2;
     }
@@ -33,6 +69,7 @@ header a img{
 }
 
 @media(max-width: 460px){
+    /*Página Index.HTML*/
     .ideia{
         display: block;
         padding: 10px 32px 32px 32px;
@@ -42,9 +79,38 @@ header a img{
         display: block;
         margin: 15px auto;
     }
+
+    /*Página Ideias.HTML*/
+
+    #page-ideias nav{
+        display: block;
+    }
+
+    #page-ideias nav li{
+        margin-bottom: 10px;
+    }
+
+    #page-ideias nav li a{
+        text-align: center;
+    }
+
+    #page-ideias header a img{
+        margin: auto;
+    }
+
+    /*ModalDel*/
+
+    #modalDel{
+        height: 1000px;
+    }
+
+    #modalDel .content p{
+        margin: 0px 10px;
+    }
 }
 
 @media(max-width: 360px){
+    /*Modal*/
     #modal{
         height: 1000px;
     }
@@ -66,7 +132,16 @@ header a img{
     form button, form a{
         grid-column: span 2;
     }
+
+    /*ModalDel*/
+    #modalDel .content p{
+        margin-bottom: 10px;
+    }
+
+    /*Página Ideias.HTML*/
+
+    #page-ideias #ideias .ideia{
+       width: 200px;
+       margin: 0px auto 20px auto;
+    }
 }
-
-
-/*Página Ideias.HTML*/
